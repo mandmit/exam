@@ -14,7 +14,7 @@ app.use(
   
 app.get('/content', db.getContent);
 app.get('/content/:id', db.getContentById);
-app.use(express.static("exam"));
+app.use(express.static("site"));
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
